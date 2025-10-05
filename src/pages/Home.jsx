@@ -7,10 +7,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="mt-4">
-        <img className="w-100" src="banner.png" alt="" />
-      </div>
       <div className="container mt-0">
+        <div className="mt-4">
+          <img className="w-100" src="banner.png" alt="" />
+        </div>
         <h1 className="mb-4 text-center bg-success text-white py-3">Categorías</h1>
         <div className="row">
           {sections.map(section => {
