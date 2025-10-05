@@ -1,0 +1,15 @@
+.bg-success {
+
+  background-color: rgb(124 190 46) !important;
+}
+
+.nav-link {
+    color: rgb(255 255 255) !important;
+}
+.nav-link:focus, .nav-link:hover {
+    text-decoration: underline;
+}
+.text-pacific{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
