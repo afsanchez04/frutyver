@@ -1,16 +1,27 @@
-# React + Vite
+# 🥦 Frutyver
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Frutyver** es una aplicación web desarrollada en **React con Vite** que simula una **tienda virtual de frutas y verduras frescas**, enfocada en promover el consumo saludable y sostenible. El proyecto busca ofrecer una experiencia de compra simple, rápida y visualmente atractiva, ideal para explorar el ciclo completo de desarrollo de una aplicación de comercio electrónico moderna.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌱 Objetivo del proyecto
 
-## React Compiler
+El propósito de **Frutyver** es **simular un entorno real de tienda online**, aplicando los principios de desarrollo front-end con React, Context API, y consumo de APIs.  
+El sistema permite al usuario **visualizar productos**, **agregarlos al carrito**, **gestionar las cantidades**, y **ver el total de su compra**, todo en tiempo real.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **React + Vite** — Framework moderno para construir interfaces rápidas y modulares.  
+- 🧠 **Context API** — Manejo global del estado del carrito de compras.    
+- 🎨 **Bootstrap** — Estilos limpios y responsivos.
+
+---
+
+## 🛒 Funcionalidades principales
+
+- ✅ **Listado de productos** (frutas y verduras con nombre, imagen, precio y descripción).  
+- 🛍️ **Carrito de compras** con cálculo de subtotal y total.  
+- ➕➖ **Incremento o eliminación de productos** en tiempo real.  
+- 🧾 **Simulación de checkout** (vista resumen de la compra)
