@@ -2,3 +2,39 @@ img.card-img-top {
     height: 196px!important;
     object-fit: cover!important;
 }
+
+.btn-added {
+          background-color: #43A047 !important;
+          border-color: #43A047 !important;
+          color: white !important;
+          cursor: default;
+          transition: all 0.3s ease;
+        }
+
+        .btn-success {
+          transition: all 0.3s ease;
+        }
+
+        .btn-success:hover:not(:disabled) {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-success:active:not(:disabled) {
+          transform: translateY(0);
+        }
+
+        @keyframes checkmark {
+          0% { 
+            transform: scale(0) rotate(-45deg);
+            opacity: 0;
+          }
+          50% { 
+            transform: scale(1.2) rotate(10deg);
+            opacity: 1;
+          }
+          100% { 
+            transform: scale(1) rotate(0);
+            opacity: 1;
+          }
+        }

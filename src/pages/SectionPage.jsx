@@ -10,13 +10,15 @@ export default function SectionPage() {
 
   return (
     <main className="container mt-4">
+      <p><Link to="/section/Granos">{section}</Link></p>
+      
       <h2>{section}</h2>
       <div className="row">
         {subsections.map(sub => {
           const subData = productsData[section][sub]
           return (
 
-            <div key={sub} className="col-md-4 mb-3">
+            <div key={sub} className="col-lg-3 col-6 mb-3">
               <div className="card shadow-sm">
                 <div className="card-body text-center">
                   <figure>

@@ -9,27 +9,27 @@ export default function Home() {
   return (
     <>
       <Link className="text-decoration-none" to="section/Verduras/De%20hoja">
-        <section class="banner-container">
+        <section className="banner-container">
           <div className="container">
             <div className="row">
               <div className="col align-items-center d-flex">
 
-                <div class="content-left">
-                  <div class="season-tag">Temporada de rebajas</div>
+                <div className="content-left">
+                  <div className="season-tag">Temporada de rebajas</div>
 
-                  <h1 class="main-title">VERDURAS</h1>
+                  <h1 className="main-title">VERDURAS</h1>
 
-                  <div class="badges-container">
-                    <div class="badge badge-discount">
-                      <span class="discount-text">HASTA</span>
-                      <span class="discount-value">30%OFF</span>
+                  <div className="badges-container">
+                    <div className="badge badge-discount">
+                      <span className="discount-text">HASTA</span>
+                      <span className="discount-value">30%OFF</span>
                     </div>
 
-                    <div class="badge badge-shipping">
+                    <div className="badge badge-shipping">
 
-                      <div class="shipping-text">
-                        <span class="shipping-label">ENVÍOS</span>
-                        <span class="shipping-time">EN 24/48 HORAS</span>
+                      <div className="shipping-text">
+                        <span className="shipping-label">ENVÍOS</span>
+                        <span className="shipping-time">EN 24/48 HORAS</span>
                       </div>
                     </div>
                   </div>
@@ -39,7 +39,7 @@ export default function Home() {
               </div>
               <div className="col">
 
-                <figure class="image-right">
+                <figure className="image-right">
                   <img src="./verdurasBanner.webp" alt="Casa de muñecas Barbie con niña jugando" />
                 </figure>
               </div>

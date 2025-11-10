@@ -84,7 +84,7 @@ export default function CheckoutPage() {
           <h4>Datos de envío y pago</h4>
           <form onSubmit={handlePay}>
             <div className="mb-3">
-              <label className="form-label">Nombre completo</label>
+              <label className="form-label">Nombre completo <span className='text-danger'>*</span></label>
               <input
                 type="text"
                 name="name"
@@ -96,7 +96,7 @@ export default function CheckoutPage() {
             </div>
 
             <div className="mb-3">
-              <label className="form-label">Correo electrónico</label>
+              <label className="form-label">Correo electrónico <span className='text-danger'>*</span></label>
               <input
                 type="email"
                 name="email"
@@ -108,7 +108,7 @@ export default function CheckoutPage() {
             </div>
 
             <div className="mb-3">
-              <label className="form-label">Dirección</label>
+              <label className="form-label">Dirección <span className='text-danger'>*</span></label>
               <input
                 type="text"
                 name="address"
@@ -120,7 +120,7 @@ export default function CheckoutPage() {
             </div>
 
             <div className="mb-3">
-              <label className="form-label">Método de pago</label>
+              <label className="form-label">Método de pago <span className='text-danger'>*</span></label>
               <select name="payment" value={form.payment} onChange={handleChange} className="form-select">
                 <option value="tarjeta">Tarjeta de crédito</option>
                 <option value="efectivo">Efectivo al recibir</option>
