@@ -65,7 +65,7 @@ export default function CartPage() {
             <h4>Total: ${total.toLocaleString()}</h4>
             <div>
               <button
-                className="btn btn-outline-danger me-2"
+                className="btn btn-link text-danger"
                 onClick={() => {
                   const confirmClear = window.confirm('¿Estás seguro de que deseas vaciar el carrito? Esta acción no se puede deshacer.')
                   if (confirmClear) clearCart()

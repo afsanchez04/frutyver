@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { productsData } from '../data/products'
 import { useState } from 'react'
+import "../stylesheet/Product.css"
 
 export default function ProductPage() {
   const { section, sub } = useParams()
