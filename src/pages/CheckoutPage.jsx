@@ -6,6 +6,7 @@ export default function CheckoutPage() {
   const { cart, clearCart } = useCart()
   const [form, setForm] = useState({ name: '', email: '', address: '', payment: 'tarjeta' })
   const [paid, setPaid] = useState(false)
+  const [isProcessing, setIsProcessing] = useState(false) 
   const navigate = useNavigate()
 
   const total = cart.reduce((sum, i) => sum + i.pricePerKg * i.weightKg, 0)
@@ -21,6 +22,9 @@ export default function CheckoutPage() {
       alert('Por favor completa todos los campos.')
       return
     }
+
+    setIsProcessing(true)
+
     // Simulación de pago
     setTimeout(() => {
       setPaid(true)
@@ -124,8 +128,10 @@ export default function CheckoutPage() {
               </select>
             </div>
 
-            <button type="submit" className="btn btn-success w-100">
-              Pagar ${total.toLocaleString()}
+            <button type="submit" disabled={isProcessing} className="btn btn-success w-100">
+              {isProcessing
+                ? 'Procesando pago...' // 👈 texto temporal
+                : `Pagar $${total.toLocaleString()}`}
             </button>
           </form>
         </div>

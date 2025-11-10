@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/section/:section" element={<SectionPage />} />
         <Route path="/section/:section/:sub" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} /> {/* ✅ nueva ruta */}
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </CartProvider>
   )

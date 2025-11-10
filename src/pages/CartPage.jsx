@@ -64,7 +64,15 @@ export default function CartPage() {
           <div className="mt-3 d-flex justify-content-between align-items-center">
             <h4>Total: ${total.toLocaleString()}</h4>
             <div>
-              <button className="btn btn-outline-danger me-2" onClick={clearCart}>Vaciar carrito</button>
+              <button
+                className="btn btn-outline-danger me-2"
+                onClick={() => {
+                  const confirmClear = window.confirm('¿Estás seguro de que deseas vaciar el carrito? Esta acción no se puede deshacer.')
+                  if (confirmClear) clearCart()
+                }}
+              >
+                Vaciar carrito
+              </button>
               <button className="btn btn-success" onClick={() => navigate('/checkout')}>
                 Ir al Checkout
               </button>

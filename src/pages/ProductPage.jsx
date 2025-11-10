@@ -27,6 +27,7 @@ export default function ProductPage() {
                 <p>{p.description}</p>
                 <p><strong>${p.pricePerKg.toLocaleString()} / kg</strong></p>
 
+                
                 <div className="d-flex align-items-center mb-2">
                   <input
                     type="number"

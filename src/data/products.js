@@ -2,7 +2,7 @@ export const productsData = {
   "Granos": {
     "portada": "./granos.jpg",
     "Arroz": {
-      "portada": "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?_gl=1*p1is8*_ga*MTMxNjU4MzQyNC4xNzU2MTU1MDYw*_ga_8JE65Q40S6*czE3NTk2OTY5OTgkbzEwJGcxJHQxNzU5Njk3MDEyJGo0NiRsMCRoMA..",
+      "portada": "../arroz.webp",
       "items": [
         {
           id: 1,
@@ -28,7 +28,7 @@ export const productsData = {
       ]
     },
     "Fríjoles": {
-      "portada": "https://images.pexels.com/photos/6316686/pexels-photo-6316686.jpeg?_gl=1*ongd0c*_ga*MTMxNjU4MzQyNC4xNzU2MTU1MDYw*_ga_8JE65Q40S6*czE3NTk2OTY5OTgkbzEwJGcxJHQxNzU5Njk3MDUzJGo1JGwwJGgw",
+      "portada": "../frijol.webp",
       "items": [
         {
           id: 4,
@@ -55,7 +55,7 @@ export const productsData = {
     }
   },
   "Verduras": {
-    "portada": "https://cdn.pixabay.com/photo/2017/11/12/19/17/vegetables-landscape-2943500_1280.jpg",
+    "portada": "./verduras.webp",
     "Tubérculos": {
       "portada": "https://cdn.pixabay.com/photo/2022/07/04/10/45/garden-radish-7300875_1280.jpg",
       "items": [
@@ -84,7 +84,7 @@ export const productsData = {
     }
   },
   "Frutas": {
-    "portada": "https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_1280.jpg",
+    "portada": "./frutas.webp",
     "Cítricas": {
       "portada": "https://cdn.pixabay.com/photo/2022/12/31/13/11/fruits-7688632_1280.jpg",
       "items": [
@@ -113,7 +113,7 @@ export const productsData = {
     }
   },
   "Carnes": {
-    "portada": "https://cdn.pixabay.com/photo/2016/11/13/05/21/restaurant-1820333_1280.jpg",
+    "portada": "./carnes.webp",
     "Res": {
       "portada": "https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_1280.jpg",
       "items": [
