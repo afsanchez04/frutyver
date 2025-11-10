@@ -4,19 +4,36 @@ import { useState } from 'react'
 
 export default function CartPage() {
   const { cart, updateWeight, removeFromCart, clearCart } = useCart()
-  const [unit, setUnit] = useState('kg')
+  const [unit, setUnit] = useState('')
   const navigate = useNavigate()
 
   const convert = wKg => (unit === 'lb' ? wKg * 2.20462 : wKg)
   const convertToKg = w => (unit === 'lb' ? w / 2.20462 : w)
   const total = cart.reduce((sum, i) => sum + i.pricePerKg * i.weightKg, 0)
 
+  // Función para manejar el cambio de unidad
+  const handleUnitChange = (e) => {
+    const value = e.target.value
+    if (value !== '') {
+      setUnit(value)
+    }
+  }
+
+  // Determinar qué unidad mostrar (por defecto kg si no se ha seleccionado)
+  const displayUnit = unit || 'kg'
+
   return (
     <div className="container mt-4">
       <h2>Carrito</h2>
 
       <div className="d-flex justify-content-end mb-3">
-        <select value={unit} onChange={e => setUnit(e.target.value)} className="form-select w-auto">
+        <select 
+          value={unit} 
+          onChange={handleUnitChange} 
+          className="form-select w-auto"
+          style={{ color: unit === '' ? '#6c757d' : 'inherit' }}
+        >
+          <option value="" disabled hidden>Cambiar unidad</option>
           <option value="kg">Ver en kg</option>
           <option value="lb">Ver en lb</option>
         </select>
@@ -30,7 +47,7 @@ export default function CartPage() {
             <thead>
               <tr>
                 <th>Producto</th>
-                <th>Peso ({unit})</th>
+                <th>Peso ({displayUnit})</th>
                 <th>Precio/kg</th>
                 <th>Subtotal</th>
                 <th></th>
@@ -54,7 +71,7 @@ export default function CartPage() {
                   <td>${item.pricePerKg.toLocaleString()}</td>
                   <td>${(item.pricePerKg * item.weightKg).toLocaleString()}</td>
                   <td>
-                    <button className="btn btn-danger btn-sm" onClick={() => removeFromCart(item.id)}>x</button>
+                    <button className="btn btn-danger btn-sm py-2 px-3" onClick={() => removeFromCart(item.id)}>x</button>
                   </td>
                 </tr>
               ))}
