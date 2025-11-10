@@ -9,7 +9,7 @@ export default function SectionPage() {
   const subsections = Object.keys(productsData[section]).filter(key => key !== "portada")
 
   return (
-    <div className="container mt-4">
+    <main className="container mt-4">
       <h2>{section}</h2>
       <div className="row">
         {subsections.map(sub => {
@@ -19,12 +19,14 @@ export default function SectionPage() {
             <div key={sub} className="col-md-4 mb-3">
               <div className="card shadow-sm">
                 <div className="card-body text-center">
-                  <img
-                    src={subData.portada}
-                    alt={`Portada de ${sub}`}
-                    className="card-img-top"
-                    style={{ height: "200px", objectFit: "cover" }}
-                  />
+                  <figure>
+                    <img
+                      src={subData.portada}
+                      alt={`Portada de ${sub}`}
+                      className="card-img-top"
+                      style={{ height: "200px", objectFit: "cover" }}
+                    />
+                  </figure>
                   <h5>{sub}</h5>
                   <Link to={`/section/${encodeURIComponent(section)}/${encodeURIComponent(sub)}`} className="btn btn-outline-success mt-2">
                     Ver {sub}
@@ -35,6 +37,6 @@ export default function SectionPage() {
           )
         })}
       </div>
-    </div>
+    </main>
   )
 }

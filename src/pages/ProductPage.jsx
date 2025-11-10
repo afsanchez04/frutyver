@@ -15,19 +15,21 @@ export default function ProductPage() {
   const convertToKg = w => (unit === 'lb' ? w / 2.20462 : w)
 
   return (
-    <div className="container mt-4">
+    <main className="container mt-4">
       <h2>{section} - {sub}</h2>
       <div className="row">
         {products.items.map(p => (
           <div key={p.id} className="col-md-4 mb-3">
             <div className="card shadow-sm">
-              <img src={p.image} alt={p.name} className="card-img-top" />
+              <figure>
+                <img src={p.image} alt={p.name} className="card-img-top" />
+              </figure>
               <div className="card-body">
                 <h5>{p.name}</h5>
                 <p>{p.description}</p>
                 <p><strong>${p.pricePerKg.toLocaleString()} / kg</strong></p>
 
-                
+
                 <div className="d-flex align-items-center mb-2">
                   <input
                     type="number"
@@ -55,6 +57,6 @@ export default function ProductPage() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   )
 }

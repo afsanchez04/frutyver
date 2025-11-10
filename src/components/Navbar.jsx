@@ -21,29 +21,31 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {/* Menú principal */}
-            <li className="nav-item">
-              <Link className="nav-link" to="section/Granos">
-                Granos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="section/Verduras">
-                Verduras
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="section/Frutas">
-                Frutas
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="section/Carnes">
-                Carnes
-              </Link>
-            </li>
-          </ul>
+          <nav>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {/* Menú principal */}
+              <li className="nav-item">
+                <Link className="nav-link" to="section/Granos">
+                  Granos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="section/Verduras">
+                  Verduras
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="section/Frutas">
+                  Frutas
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="section/Carnes">
+                  Carnes
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
           {/* Carrito a la derecha */}
           <ul className="navbar-nav ms-auto">
@@ -57,7 +59,7 @@ export default function Navbar() {
                     {cart.length}
                   </span>
                 )}
-                <i className="bi bi-cart4 fs-4"></i>
+                <i className="bi bi-cart4 fs-4" aria-label="icono-carrito"></i>
               </Link>
             </li>
           </ul>

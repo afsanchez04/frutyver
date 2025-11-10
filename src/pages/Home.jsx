@@ -7,12 +7,14 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mt-0">
+      <main className="container mt-0">
         <div className="mt-4">
-          <img className="w-100" src="banner.png" alt="" />
+          <figure>
+            <img className="w-100" src="banner.png" alt="banner-principal" />
+          </figure>
         </div>
         <h1 className="mb-4 text-center bg-success text-white py-3">Categorías</h1>
-        <div className="row">
+        <section className="row">
           {sections.map(section => {
             const portada = productsData[section].portada // obtener imagen por categoría
 
@@ -20,12 +22,14 @@ export default function Home() {
               <div key={section} className="col-md-6 mb-4">
                 <div className="card shadow-sm h-100">
                   {portada && (
-                    <img
-                      src={portada.startsWith('http') ? portada : `/${portada}`}
-                      className="card-img-top"
-                      alt={`Imagen de ${section}`}
-                      style={{ height: '150px', objectFit: 'cover' }}
-                    />
+                    <figure>
+                      <img
+                        src={portada.startsWith('http') ? portada : `/${portada}`}
+                        className="card-img-top"
+                        alt={`Imagen de ${section}`}
+                        style={{ height: '150px', objectFit: 'cover' }}
+                      />
+                    </figure>
                   )}
                   <div className="card-body text-center">
                     <h3 className="card-title">{section}</h3>
@@ -40,8 +44,8 @@ export default function Home() {
               </div>
             )
           })}
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 }

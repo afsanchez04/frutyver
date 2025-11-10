@@ -55,7 +55,7 @@ export default function CheckoutPage() {
     )
 
   return (
-    <div className="container mt-4">
+    <main className="container mt-4">
       <h2>Finalizar compra</h2>
       <div className="row mt-4">
         {/* Resumen del pedido */}
@@ -130,12 +130,12 @@ export default function CheckoutPage() {
 
             <button type="submit" disabled={isProcessing} className="btn btn-success w-100">
               {isProcessing
-                ? 'Procesando pago...' // 👈 texto temporal
+                ? 'Procesando pago...' 
                 : `Pagar $${total.toLocaleString()}`}
             </button>
           </form>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
