@@ -4,7 +4,7 @@ import { productsData } from '../data/products'
 export default function SectionPage() {
   const { section } = useParams()
 
-  if (!productsData[section]) return <p className="p-3">Sección no encontrada.</p>
+  if (!productsData[section]) return <p className="p-3">Sección no encontrada 🦓.</p>
 
   const subsections = Object.keys(productsData[section]).filter(key => key !== "portada")
 
