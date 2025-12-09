@@ -1,6 +1,7 @@
 export const productsData = {
   "Granos": {
     "portada": "./granos.jpg",
+    "colorTag": "#C68B36",
     "Arroz": {
       "portada": "../arroz.webp",
       "items": [
@@ -66,6 +67,7 @@ export const productsData = {
   },
   "Verduras": {
     "portada": "./verduras.webp",
+    "colorTag": "#3A9D23",
     "Tubérculos": {
       "portada": "https://cdn.pixabay.com/photo/2022/07/04/10/45/garden-radish-7300875_1280.jpg",
       "items": [
@@ -124,6 +126,7 @@ export const productsData = {
   },
   "Frutas": {
     "portada": "./frutas.webp",
+    "colorTag": "#E84A5F",
     "Cítricas": {
       "portada": "https://cdn.pixabay.com/photo/2022/12/31/13/11/fruits-7688632_1280.jpg",
       "items": [
@@ -156,6 +159,7 @@ export const productsData = {
   },
   "Carnes": {
     "portada": "./carnes.webp",
+    "colorTag": "#8B1E3F",
     "Res": {
       "portada": "https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_1280.jpg",
       "items": [
