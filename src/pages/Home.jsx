@@ -20,7 +20,7 @@ export default function Home() {
       shipping: "ENVÍOS",
       shippingTime: "EN 24/48 HORAS",
       image: "./verdurasBanner.webp",
-      link: "section/Verduras/De%20hoja",
+      link: "category/Verduras",
       gradient: "linear-gradient(135deg, #96d35c 0%, #FFD93D 100%)",
       titleColor: "#004308",
       badgeColor: "#004308"
@@ -113,24 +113,9 @@ export default function Home() {
             </div>
             
             <p className="modal-description">
-              Completa tu primera compra y obtén <strong>90 puntos de regalo</strong> 
+              Completa tu primera compra y obtén <strong>90 puntos de regalo </strong> 
               que podrás canjear en futuras compras.
             </p>
-            
-            <div className="modal-features">
-              <div className="feature-item">
-                <i className="bi bi-check-circle-fill"></i>
-                <span>Envío gratis en tu primer pedido</span>
-              </div>
-              <div className="feature-item">
-                <i className="bi bi-check-circle-fill"></i>
-                <span>Productos frescos y de calidad</span>
-              </div>
-              <div className="feature-item">
-                <i className="bi bi-check-circle-fill"></i>
-                <span>Atención personalizada</span>
-              </div>
-            </div>
             
             <button className="modal-cta-btn" onClick={handleCloseModal}>
               ¡Empezar a comprar!

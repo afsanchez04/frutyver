@@ -447,13 +447,13 @@
     .points-banner {
       background: linear-gradient(135deg, #FFD93D 0%, #FFA500 100%);
       border-radius: 20px;
-      padding: 20px;
+      padding: 10px;
       margin: 25px 0;
       box-shadow: 0 8px 20px rgba(255, 165, 0, 0.3);
     }
 
     .points-number {
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 900;
       color: white;
       line-height: 1;
