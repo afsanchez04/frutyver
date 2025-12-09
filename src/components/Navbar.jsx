@@ -52,22 +52,22 @@ export default function Navbar() {
           <nav>
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('Granos') ? 'active' : ''}`} to="section/Granos">
+                <Link className={`nav-link ${isActive('Granos') ? 'active' : ''}`} to="category/Granos">
                   Granos
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('Verduras') ? 'active' : ''}`} to="section/Verduras">
+                <Link className={`nav-link ${isActive('Verduras') ? 'active' : ''}`} to="category/Verduras">
                   Verduras
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('Frutas') ? 'active' : ''}`} to="section/Frutas">
+                <Link className={`nav-link ${isActive('Frutas') ? 'active' : ''}`} to="category/Frutas">
                   Frutas
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('Carnes') ? 'active' : ''}`} to="section/Carnes">
+                <Link className={`nav-link ${isActive('Carnes') ? 'active' : ''}`} to="category/Carnes">
                   Carnes
                 </Link>
               </li>
